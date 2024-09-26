@@ -1,0 +1,27 @@
+<nav>
+    <!-- <a routerLink="/Home" routerLinkActive="active">Home</a> -->
+    <!-- <a routerLink="/about" routerLinkActive="active">About</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a routerLink="/terms" routerLinkActive="active">terms</a>
+    <a routerLink="/mission" routerLinkActive="active">mission</a> -->
+
+
+    </nav>
+    <div [class.active]="isActive">active class</div>
+    <button (click)="toggleActive()">Toggle is Active now</button>
+    
+    <button (click)="onClick()">hello click me</button>
+    <p>{{ message }}</p>
+    
+
+    
+    <input [(ngModel)]="userName" placeholder="Enter your name">
+    <p>Hello, {{ userName }}!</p>
+    
+    <p *ngIf="isVisible">If Yo went to hide me press HIDE Toggele</p>
+    <button (click)="toggleVisibility()">Hide Toggle</button>
+    
+    <ul>
+      <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
+    
