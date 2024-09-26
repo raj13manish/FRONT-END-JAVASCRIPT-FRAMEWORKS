@@ -1,0 +1,22 @@
+/* Custom styles for different grade categories */
+.table-success {
+    background-color: #28a745 !important; /* Change this to your desired color */
+    color: white;
+  }
+  
+  .table-warning {
+    background-color: #ffc107 !important; /* Change this to your desired color */
+    color: black;
+  }
+  
+  .table-danger {
+    background-color: #dc3545 !important; /* Change this to your desired color */
+    color: white;
+  }
+  
+  /* Add hover effect to all rows */
+  .hover-effect:hover {
+    background-color: #f8f9fa !important; /* Change this to your desired hover color */
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }

@@ -1,0 +1,23 @@
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students | passingGrade:50" [ngClass]="{
+        'table-success': student.grade >= 75, 
+        'table-warning': student.grade >= 50 && student.grade < 75, 
+        'table-danger': student.grade < 50, 
+        'hover-effect': true
+      }">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.grade }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
