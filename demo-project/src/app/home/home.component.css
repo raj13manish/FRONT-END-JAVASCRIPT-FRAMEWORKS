@@ -1,0 +1,9 @@
+.feesPaid{
+    background-color: green;
+    color: white;
+
+}
+.feesPending{
+    background-color: yellow;
+    color: #000;
+}
